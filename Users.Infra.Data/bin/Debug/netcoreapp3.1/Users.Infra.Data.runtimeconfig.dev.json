@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Graff\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Graff\\.nuget\\packages"
+    ]
+  }
+}

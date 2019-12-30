@@ -1,0 +1,15 @@
+C:\Projects\Users\Users.Infra.Data\bin\Debug\netcoreapp3.1\Users.Infra.Data.deps.json
+C:\Projects\Users\Users.Infra.Data\bin\Debug\netcoreapp3.1\Users.Infra.Data.runtimeconfig.json
+C:\Projects\Users\Users.Infra.Data\bin\Debug\netcoreapp3.1\Users.Infra.Data.runtimeconfig.dev.json
+C:\Projects\Users\Users.Infra.Data\bin\Debug\netcoreapp3.1\Users.Infra.Data.dll
+C:\Projects\Users\Users.Infra.Data\bin\Debug\netcoreapp3.1\Users.Infra.Data.pdb
+C:\Projects\Users\Users.Infra.Data\bin\Debug\netcoreapp3.1\Users.Domain.dll
+C:\Projects\Users\Users.Infra.Data\bin\Debug\netcoreapp3.1\Users.Generics.dll
+C:\Projects\Users\Users.Infra.Data\bin\Debug\netcoreapp3.1\Users.Domain.pdb
+C:\Projects\Users\Users.Infra.Data\bin\Debug\netcoreapp3.1\Users.Generics.pdb
+C:\Projects\Users\Users.Infra.Data\obj\Debug\netcoreapp3.1\Users.Infra.Data.csprojAssemblyReference.cache
+C:\Projects\Users\Users.Infra.Data\obj\Debug\netcoreapp3.1\Users.Infra.Data.AssemblyInfoInputs.cache
+C:\Projects\Users\Users.Infra.Data\obj\Debug\netcoreapp3.1\Users.Infra.Data.AssemblyInfo.cs
+C:\Projects\Users\Users.Infra.Data\obj\Debug\netcoreapp3.1\Users.Infra.Data.csproj.CopyComplete
+C:\Projects\Users\Users.Infra.Data\obj\Debug\netcoreapp3.1\Users.Infra.Data.dll
+C:\Projects\Users\Users.Infra.Data\obj\Debug\netcoreapp3.1\Users.Infra.Data.pdb

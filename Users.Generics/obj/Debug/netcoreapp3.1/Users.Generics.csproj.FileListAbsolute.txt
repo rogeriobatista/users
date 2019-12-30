@@ -1,0 +1,8 @@
+C:\Projects\Users\Users.Generics\bin\Debug\netcoreapp3.1\Users.Generics.deps.json
+C:\Projects\Users\Users.Generics\bin\Debug\netcoreapp3.1\Users.Generics.dll
+C:\Projects\Users\Users.Generics\bin\Debug\netcoreapp3.1\Users.Generics.pdb
+C:\Projects\Users\Users.Generics\obj\Debug\netcoreapp3.1\Users.Generics.csprojAssemblyReference.cache
+C:\Projects\Users\Users.Generics\obj\Debug\netcoreapp3.1\Users.Generics.AssemblyInfoInputs.cache
+C:\Projects\Users\Users.Generics\obj\Debug\netcoreapp3.1\Users.Generics.AssemblyInfo.cs
+C:\Projects\Users\Users.Generics\obj\Debug\netcoreapp3.1\Users.Generics.dll
+C:\Projects\Users\Users.Generics\obj\Debug\netcoreapp3.1\Users.Generics.pdb

@@ -1,0 +1,11 @@
+C:\Projects\Users\Users.Domain\bin\Debug\netcoreapp3.1\Users.Domain.deps.json
+C:\Projects\Users\Users.Domain\bin\Debug\netcoreapp3.1\Users.Domain.dll
+C:\Projects\Users\Users.Domain\bin\Debug\netcoreapp3.1\Users.Domain.pdb
+C:\Projects\Users\Users.Domain\bin\Debug\netcoreapp3.1\Users.Generics.dll
+C:\Projects\Users\Users.Domain\bin\Debug\netcoreapp3.1\Users.Generics.pdb
+C:\Projects\Users\Users.Domain\obj\Debug\netcoreapp3.1\Users.Domain.csprojAssemblyReference.cache
+C:\Projects\Users\Users.Domain\obj\Debug\netcoreapp3.1\Users.Domain.AssemblyInfoInputs.cache
+C:\Projects\Users\Users.Domain\obj\Debug\netcoreapp3.1\Users.Domain.AssemblyInfo.cs
+C:\Projects\Users\Users.Domain\obj\Debug\netcoreapp3.1\Users.Domain.csproj.CopyComplete
+C:\Projects\Users\Users.Domain\obj\Debug\netcoreapp3.1\Users.Domain.dll
+C:\Projects\Users\Users.Domain\obj\Debug\netcoreapp3.1\Users.Domain.pdb
