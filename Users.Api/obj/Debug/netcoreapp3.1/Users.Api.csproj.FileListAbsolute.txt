@@ -116,4 +116,11 @@ C:\Projects\Users\Users.Api\obj\Debug\netcoreapp3.1\Users.Api.csproj.CopyComplet
 C:\Projects\Users\Users.Api\obj\Debug\netcoreapp3.1\Users.Api.dll
 C:\Projects\Users\Users.Api\obj\Debug\netcoreapp3.1\Users.Api.pdb
 C:\Projects\Users\Users.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Projects\Users\Users.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Projects\Users\Users.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Projects\Users\Users.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Projects\Users\Users.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Projects\Users\Users.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Projects\Users\Users.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Projects\Users\Users.Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Projects\Users\Users.Api\obj\Debug\netcoreapp3.1\Users.Api.MvcApplicationPartsAssemblyInfo.cache

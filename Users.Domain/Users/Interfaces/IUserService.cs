@@ -12,5 +12,6 @@ namespace Users.Domain.Users.Interfaces
         Task<UserDto> Get(long id);
         Task<UserDto> Save(UserDto userDto);
         Task Delete(long id);
+        Task<UserDto> Login(UserDto userDto);
     }
 }

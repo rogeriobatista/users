@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Users.Domain.Users.Dtos;
@@ -7,6 +8,7 @@ using Users.Infra.Data.Context;
 
 namespace Users.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -40,11 +42,18 @@ namespace Users.Api.Controllers
             return Ok(result);
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task Delete(long id)
         {
             await _userService.Delete(id);
             await _context.SaveChangesAsync();
+        }
+
+        [AllowAnonymous]
+        [HttpPost("login")]
+        public async Task<UserDto> Login([FromBody] UserDto userDto)
+        {
+            return await _userService.Login(userDto);
         }
     }
 }
