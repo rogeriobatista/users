@@ -14,7 +14,7 @@
         "outputPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rogeriobatista/.config/NuGet/NuGet.Config"
+          "/Users/rogeriobatista/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -78,7 +78,7 @@
         "outputPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rogeriobatista/.config/NuGet/NuGet.Config"
+          "/Users/rogeriobatista/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -138,7 +138,7 @@
         "outputPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rogeriobatista/.config/NuGet/NuGet.Config"
+          "/Users/rogeriobatista/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
