@@ -1,7 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Users.Domain.Users.Dtos;
 using Users.Domain.Users.Interfaces;
 using Users.Infra.Data.Context;
@@ -22,24 +21,48 @@ namespace Users.Api.Controllers
             _userService = userService;
         }
 
-        [HttpGet()]
-        public async Task<ActionResult<List<UserDto>>> Get()
+        [HttpGet]
+        public async Task<ActionResult> Get()
         {
-            return Ok(await _userService.Get());
+            try
+            {
+                return Ok(await _userService.Get());
+            }
+            catch (System.Exception ex)
+            {
+                return Ok(ex);
+            }
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<UserDto>> GetById(long id)
+        public async Task<ActionResult> GetById(long id)
         {
-            return Ok(await _userService.Get(id));
+            try
+            {
+                return Ok(await _userService.Get(id));
+            }
+            catch (System.Exception ex)
+            {
+                return Ok(ex);
+            }
         }
 
-        [HttpPost]
-        public async Task<ActionResult<UserDto>> Save([FromBody]UserDto userDto)
+        [HttpPatch]
+        public async Task<ActionResult> Save([FromBody]UserDto userDto)
         {
-            UserDto result = await _userService.Save(userDto);
-            await _context.SaveChangesAsync();
-            return Ok(result);
+            try
+            {
+                UserDto result = await _userService.Save(userDto);
+
+                if (_context.ChangeTracker.HasChanges())
+                    await _context.SaveChangesAsync();
+
+                return Ok(result);
+            }
+            catch (System.Exception ex)
+            {
+                return Ok(ex);
+            }            
         }
 
         [HttpDelete("{id}")]
@@ -50,10 +73,55 @@ namespace Users.Api.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost("login")]
-        public async Task<UserDto> Login([FromBody] UserDto userDto)
+        [HttpPost("register")]
+        public async Task<ActionResult> Register([FromBody] UserDto userDto)
         {
-            return await _userService.Login(userDto);
+            try
+            {
+                UserDto result = await _userService.Save(userDto);
+
+                if (_context.ChangeTracker.HasChanges())
+                    await _context.SaveChangesAsync();
+
+                return Ok(result);
+            }
+            catch (System.Exception ex)
+            {
+                return Ok(ex);
+            }
+        }
+
+        [AllowAnonymous]
+        [HttpPost("login")]
+        public async Task<ActionResult> Login([FromBody] UserDto userDto)
+        {
+            try
+            {
+                return Ok(await _userService.Login(userDto));
+            }
+            catch (System.Exception ex)
+            {
+                return Ok(ex);
+            }            
+        }
+
+        [AllowAnonymous]
+        [HttpPost("recover")]
+        public async Task<ActionResult> Recover([FromBody] RecoverUserPasswordDto recoverDto)
+        {
+            try
+            {
+                string result = await _userService.Recover(recoverDto);
+
+                if (_context.ChangeTracker.HasChanges())
+                    await _context.SaveChangesAsync();
+
+                return Ok(result);
+            }
+            catch (System.Exception ex)
+            {
+                return Ok(ex);
+            }
         }
     }
 }

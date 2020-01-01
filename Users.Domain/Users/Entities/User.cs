@@ -5,24 +5,24 @@ namespace Users.Domain.Users.Entities
 {
     public class User : Entity<long, User>
     {
-        public string Username { get; private set; }
+        public string Email { get; private set; }
         public string Password { get; private set; }
         public string Name { get; private set; }
 
         protected User() { }
 
-        public User(string username,
+        public User(string email,
                     string password,
                     string name)
         {
-            Username = username;
+            Email = email;
             Password = password;
             Name = name;
         }
 
         public override bool Validate()
         {
-            RuleFor(_ => _.Username)
+            RuleFor(_ => _.Email)
                 .NotNull()
                 .NotEmpty();
 
@@ -38,9 +38,9 @@ namespace Users.Domain.Users.Entities
             return ValidationResult.IsValid;
         }
 
-        public void UpdateUsername(string username)
+        public void UpdateEmail(string email)
         {
-            Username = username;
+            Email = email;
         }
 
         public void UpdatePassword(string password)

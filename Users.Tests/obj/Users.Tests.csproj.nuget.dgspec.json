@@ -1,0 +1,298 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/rogeriobatista/Documents/Projects/users/Users.Tests/Users.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/Users.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/Users.Domain.csproj",
+        "projectName": "Users.Domain",
+        "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/Users.Domain.csproj",
+        "packagesPath": "/Users/rogeriobatista/.nuget/packages/",
+        "outputPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rogeriobatista/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj": {
+                "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.6.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj",
+        "projectName": "Users.Generics",
+        "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj",
+        "packagesPath": "/Users/rogeriobatista/.nuget/packages/",
+        "outputPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rogeriobatista/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.6.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/Users.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/Users.Infra.Data.csproj",
+        "projectName": "Users.Infra.Data",
+        "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/Users.Infra.Data.csproj",
+        "packagesPath": "/Users/rogeriobatista/.nuget/packages/",
+        "outputPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rogeriobatista/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/Users.Domain.csproj": {
+                "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/Users.Domain.csproj"
+              },
+              "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj": {
+                "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rogeriobatista/Documents/Projects/users/Users.Tests/Users.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rogeriobatista/Documents/Projects/users/Users.Tests/Users.Tests.csproj",
+        "projectName": "Users.Tests",
+        "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Tests/Users.Tests.csproj",
+        "packagesPath": "/Users/rogeriobatista/.nuget/packages/",
+        "outputPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rogeriobatista/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/Users.Domain.csproj": {
+                "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/Users.Domain.csproj"
+              },
+              "/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/Users.Infra.Data.csproj": {
+                "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/Users.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Faker.NETCore": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

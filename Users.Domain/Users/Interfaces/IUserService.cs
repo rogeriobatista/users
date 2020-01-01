@@ -13,5 +13,6 @@ namespace Users.Domain.Users.Interfaces
         Task<UserDto> Save(UserDto userDto);
         Task Delete(long id);
         Task<UserDto> Login(UserDto userDto);
+        Task<string> Recover(RecoverUserPasswordDto recoverDto);
     }
 }

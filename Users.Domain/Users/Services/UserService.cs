@@ -11,6 +11,7 @@ using Users.Domain.Users.Dtos;
 using Users.Domain.Users.Entities;
 using Users.Domain.Users.Interfaces;
 using Users.Generics.Helpers;
+using Users.Generics.Resources;
 
 namespace Users.Domain.Users.Services
 {
@@ -72,11 +73,26 @@ namespace Users.Domain.Users.Services
             return userDto;
         }
 
+        public async Task<string> Recover(RecoverUserPasswordDto recoverDto)
+        {
+            if (!await _userRepository.Exist(recoverDto.Email))
+                return StringResource.RecoverMessageUserDontExists;
+
+            User user = await _userRepository.GetByEmailAsync(recoverDto.Email);
+
+            if (user == null)
+                return StringResource.RecoverMessageUserDontExists;
+
+            user.UpdatePassword(recoverDto.Password);        
+
+            return StringResource.RecoverMessageSuccess;
+        }
+
         private async Task<UserDto> Update(UserDto userDto)
         {
             User user = await _userRepository.GetByIdAsync(userDto.Id);
 
-            user.UpdateUsername(userDto.Username);
+            user.UpdateEmail(userDto.Email);
             user.UpdatePassword(userDto.Password);
             user.UpdateName(userDto.Name);
 
@@ -90,10 +106,10 @@ namespace Users.Domain.Users.Services
 
         private async Task<UserDto> Create(UserDto userDto)
         {
-            if (await _userRepository.Exist(userDto.Username))
+            if (await _userRepository.Exist(userDto.Email))
                 return null;
 
-            User user = new User(userDto.Username, userDto.Password, userDto.Name);
+            User user = new User(userDto.Email, userDto.Password, userDto.Name);
 
             if (!user.Validate())
                 return null;

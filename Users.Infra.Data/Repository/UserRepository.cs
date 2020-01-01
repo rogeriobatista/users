@@ -22,14 +22,19 @@ namespace Users.Infra.Data.Repository
             return await _context.Set<User>().FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task<bool> Exist(string username)
+        public async Task<bool> Exist(string email)
         {
-            return _context.Set<User>().Select(x => x.Username).Any(x => x == username);
+            return await _context.Set<User>().Select(x => x.Email).AnyAsync(x => x == email);
         }
 
         public async Task<string> Login(UserDto userDto)
         {
-            return await _context.Set<User>().Where(x => x.Username == userDto.Username && x.Password == userDto.Password).Select(x => x.Username).FirstOrDefaultAsync();
+            return await _context.Set<User>().Where(x => x.Email == userDto.Email && x.Password == userDto.Password).Select(x => x.Email).FirstOrDefaultAsync();
+        }
+
+        public async Task<User> GetByEmailAsync(string email)
+        {
+            return await _context.Set<User>().FirstOrDefaultAsync(x => x.Email == email);
         }
     }
 }

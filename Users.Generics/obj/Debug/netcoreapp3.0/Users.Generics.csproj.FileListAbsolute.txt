@@ -1,0 +1,7 @@
+/Users/rogeriobatista/Documents/Projects/users/Users.Generics/bin/Debug/netcoreapp3.0/Users.Generics.deps.json
+/Users/rogeriobatista/Documents/Projects/users/Users.Generics/bin/Debug/netcoreapp3.0/Users.Generics.dll
+/Users/rogeriobatista/Documents/Projects/users/Users.Generics/bin/Debug/netcoreapp3.0/Users.Generics.pdb
+/Users/rogeriobatista/Documents/Projects/users/Users.Generics/obj/Debug/netcoreapp3.0/Users.Generics.AssemblyInfoInputs.cache
+/Users/rogeriobatista/Documents/Projects/users/Users.Generics/obj/Debug/netcoreapp3.0/Users.Generics.AssemblyInfo.cs
+/Users/rogeriobatista/Documents/Projects/users/Users.Generics/obj/Debug/netcoreapp3.0/Users.Generics.dll
+/Users/rogeriobatista/Documents/Projects/users/Users.Generics/obj/Debug/netcoreapp3.0/Users.Generics.pdb

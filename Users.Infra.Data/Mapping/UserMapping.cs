@@ -9,7 +9,7 @@ namespace Users.Infra.Data.Mapping
     {
         public override void Map(EntityTypeBuilder<User> builder)
         {
-            builder.Property(_ => _.Username)
+            builder.Property(_ => _.Email)
                    .IsRequired();
 
             builder.Property(_ => _.Password)

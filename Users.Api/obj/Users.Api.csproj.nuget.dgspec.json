@@ -1,34 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\Users\\Users.Api\\Users.Api.csproj": {}
+    "/Users/rogeriobatista/Documents/Projects/users/Users.Api/Users.Api.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\Users\\Users.Api\\Users.Api.csproj": {
+    "/Users/rogeriobatista/Documents/Projects/users/Users.Api/Users.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Users\\Users.Api\\Users.Api.csproj",
+        "projectUniqueName": "/Users/rogeriobatista/Documents/Projects/users/Users.Api/Users.Api.csproj",
         "projectName": "Users.Api",
-        "projectPath": "C:\\Projects\\Users\\Users.Api\\Users.Api.csproj",
-        "packagesPath": "C:\\Users\\Graff\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Users\\Users.Api\\obj\\",
+        "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Api/Users.Api.csproj",
+        "packagesPath": "/Users/rogeriobatista/.nuget/packages/",
+        "outputPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Graff\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/rogeriobatista/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Projects\\Users\\Users.Infra.Data\\Users.Infra.Data.csproj": {
-                "projectPath": "C:\\Projects\\Users\\Users.Infra.Data\\Users.Infra.Data.csproj"
+              "/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/Users.Infra.Data.csproj": {
+                "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/Users.Infra.Data.csproj"
               }
             }
           }
@@ -40,11 +38,11 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "netcoreapp3.0": {
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -58,7 +56,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
@@ -79,35 +77,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects\\Users\\Users.Domain\\Users.Domain.csproj": {
+    "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/Users.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Users\\Users.Domain\\Users.Domain.csproj",
+        "projectUniqueName": "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/Users.Domain.csproj",
         "projectName": "Users.Domain",
-        "projectPath": "C:\\Projects\\Users\\Users.Domain\\Users.Domain.csproj",
-        "packagesPath": "C:\\Users\\Graff\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Users\\Users.Domain\\obj\\",
+        "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/Users.Domain.csproj",
+        "packagesPath": "/Users/rogeriobatista/.nuget/packages/",
+        "outputPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Graff\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/rogeriobatista/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Projects\\Users\\Users.Generics\\Users.Generics.csproj": {
-                "projectPath": "C:\\Projects\\Users\\Users.Generics\\Users.Generics.csproj"
+              "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj": {
+                "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj"
               }
             }
           }
@@ -119,7 +115,7 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "netcoreapp3.0": {
           "dependencies": {
             "FluentValidation": {
               "target": "Package",
@@ -145,32 +141,30 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects\\Users\\Users.Generics\\Users.Generics.csproj": {
+    "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Users\\Users.Generics\\Users.Generics.csproj",
+        "projectUniqueName": "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj",
         "projectName": "Users.Generics",
-        "projectPath": "C:\\Projects\\Users\\Users.Generics\\Users.Generics.csproj",
-        "packagesPath": "C:\\Users\\Graff\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Users\\Users.Generics\\obj\\",
+        "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj",
+        "packagesPath": "/Users/rogeriobatista/.nuget/packages/",
+        "outputPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Graff\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/rogeriobatista/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netcoreapp3.0": {
             "projectReferences": {}
           }
         },
@@ -181,7 +175,7 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "netcoreapp3.0": {
           "dependencies": {
             "FluentValidation": {
               "target": "Package",
@@ -207,38 +201,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects\\Users\\Users.Infra.Data\\Users.Infra.Data.csproj": {
+    "/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/Users.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Users\\Users.Infra.Data\\Users.Infra.Data.csproj",
+        "projectUniqueName": "/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/Users.Infra.Data.csproj",
         "projectName": "Users.Infra.Data",
-        "projectPath": "C:\\Projects\\Users\\Users.Infra.Data\\Users.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\Graff\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Users\\Users.Infra.Data\\obj\\",
+        "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/Users.Infra.Data.csproj",
+        "packagesPath": "/Users/rogeriobatista/.nuget/packages/",
+        "outputPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Graff\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/rogeriobatista/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Projects\\Users\\Users.Domain\\Users.Domain.csproj": {
-                "projectPath": "C:\\Projects\\Users\\Users.Domain\\Users.Domain.csproj"
+              "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/Users.Domain.csproj": {
+                "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Domain/Users.Domain.csproj"
               },
-              "C:\\Projects\\Users\\Users.Generics\\Users.Generics.csproj": {
-                "projectPath": "C:\\Projects\\Users\\Users.Generics\\Users.Generics.csproj"
+              "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj": {
+                "projectPath": "/Users/rogeriobatista/Documents/Projects/users/Users.Generics/Users.Generics.csproj"
               }
             }
           }
@@ -250,7 +242,7 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "netcoreapp3.0": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -292,7 +284,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
         }
       }
     }

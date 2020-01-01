@@ -10,5 +10,6 @@ namespace Users.Domain.Users.Interfaces
         Task<User> GetByIdAsync(long id);
         Task<bool> Exist(string username);
         Task<string> Login(UserDto userDto);
+        Task<User> GetByEmailAsync(string email);
     }
 }

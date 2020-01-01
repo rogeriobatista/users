@@ -1,0 +1,15 @@
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/bin/Debug/netcoreapp3.0/Users.Infra.Data.deps.json
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/bin/Debug/netcoreapp3.0/Users.Infra.Data.runtimeconfig.json
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/bin/Debug/netcoreapp3.0/Users.Infra.Data.runtimeconfig.dev.json
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/bin/Debug/netcoreapp3.0/Users.Infra.Data.dll
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/bin/Debug/netcoreapp3.0/Users.Infra.Data.pdb
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/bin/Debug/netcoreapp3.0/Users.Domain.dll
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/bin/Debug/netcoreapp3.0/Users.Generics.dll
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/bin/Debug/netcoreapp3.0/Users.Domain.pdb
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/bin/Debug/netcoreapp3.0/Users.Generics.pdb
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/obj/Debug/netcoreapp3.0/Users.Infra.Data.csprojAssemblyReference.cache
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/obj/Debug/netcoreapp3.0/Users.Infra.Data.AssemblyInfoInputs.cache
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/obj/Debug/netcoreapp3.0/Users.Infra.Data.AssemblyInfo.cs
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/obj/Debug/netcoreapp3.0/Users.Infra.Data.csproj.CopyComplete
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/obj/Debug/netcoreapp3.0/Users.Infra.Data.dll
+/Users/rogeriobatista/Documents/Projects/users/Users.Infra.Data/obj/Debug/netcoreapp3.0/Users.Infra.Data.pdb
