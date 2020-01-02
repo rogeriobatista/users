@@ -6,6 +6,7 @@
 /Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/Users.Tests.runtimeconfig.dev.json
 /Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/Users.Tests.dll
 /Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/Users.Tests.pdb
+/Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/Castle.Core.dll
 /Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/Faker.NETCore.dll
 /Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/FluentValidation.dll
 /Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/Microsoft.Bcl.AsyncInterfaces.dll
@@ -39,6 +40,7 @@
 /Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/Microsoft.TestPlatform.Utilities.dll
 /Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/Microsoft.VisualStudio.TestPlatform.Common.dll
 /Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/testhost.dll
+/Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/Moq.dll
 /Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
 /Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/NuGet.Frameworks.dll
 /Users/rogeriobatista/Documents/Projects/users/Users.Tests/bin/Debug/netcoreapp3.0/System.Collections.Immutable.dll

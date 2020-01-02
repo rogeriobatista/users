@@ -33,7 +33,7 @@ namespace Users.Domain.Users.Services
 
         public async Task<List<UserDto>> Get()
         {
-            return _userRepository.ToListAsync().Result.Select(x => UserDto.CreateUserDto(x)).ToList();
+            return _userRepository.ToListAsync().Result.Select(UserDto.CreateUserDto).ToList();
         }
 
         public async Task<UserDto> Save(UserDto userDto)
@@ -55,6 +55,9 @@ namespace Users.Domain.Users.Services
         public async Task<UserDto> Login(UserDto userDto)
         {
             string username = await _userRepository.Login(userDto);
+
+            if (username == null)
+                return null;
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);

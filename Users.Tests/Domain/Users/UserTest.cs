@@ -77,5 +77,47 @@ namespace Users.Tests.Domain.Users
 
             Assert.Equal(user.Name, _name);
         }
+
+        [Fact]
+        public void ShouldUpdateEmail()
+        {
+            User user = new User(_email, _password, _name);
+
+            Assert.Equal(user.Email, _email);
+
+            string newEmail = "email@tests.com";
+
+            user.UpdateEmail(newEmail);
+
+            Assert.Equal(user.Email, newEmail);
+        }
+
+        [Fact]
+        public void ShouldUpdatePassword()
+        {
+            User user = new User(_email, _password, _name);
+
+            Assert.Equal(user.Password, _password);
+
+            string newPassword = "1920384756";
+
+            user.UpdatePassword(newPassword);
+
+            Assert.Equal(user.Password, newPassword);
+        }
+
+        [Fact]
+        public void ShouldUpdateName()
+        {
+            User user = new User(_email, _password, _name);
+
+            Assert.Equal(user.Name, _name);
+
+            string newName = "Testting Test";
+
+            user.UpdateName(newName);
+
+            Assert.Equal(user.Name, newName);
+        }
     }
 }
