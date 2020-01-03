@@ -1,5 +1,5 @@
 ﻿using Users.Domain.Users.Entities;
-using Users.Generics.Configuration;
+using Users.Generics.Configurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

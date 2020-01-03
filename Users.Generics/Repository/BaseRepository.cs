@@ -13,17 +13,30 @@ namespace Users.Generics.Repository
         where TEntity : Entity<TId, TEntity>
     {
         private readonly DbSet<TEntity> _dbSet;
+        private readonly DbContext _context;
 
         public BaseRepository(DbContext context)
         {
             _dbSet = context.Set<TEntity>();
+            _context = context;
         }
 
-        public async Task AddAsync(TEntity obj) => await _dbSet.AddAsync(obj);
+        public async Task AddAsync(TEntity obj)
+        {
+            await _dbSet.AddAsync(obj);
+            await _context.SaveChangesAsync();
+        }
 
-        public void Update(TEntity obj) => _dbSet.Update(obj);
+        public void Update(TEntity obj) {
+            _dbSet.Update(obj);
+            _context.SaveChanges();
+        }
 
-        public void Remove(TEntity obj) => _dbSet.Remove(obj);
+        public void Remove(TEntity obj)
+        {
+            _dbSet.Remove(obj);
+            _context.SaveChanges();
+        }
 
         public async Task<IEnumerable<TEntity>> ToListAsyncAsNoTracking() => await _dbSet.AsNoTracking().ToListAsync();
 

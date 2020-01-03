@@ -11,5 +11,6 @@
 
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Middlewares\" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-﻿using Users.Generics.Configuration;
+﻿using Users.Generics.Configurations;
 using Microsoft.EntityFrameworkCore;
 
 namespace Users.Generics.Extensions

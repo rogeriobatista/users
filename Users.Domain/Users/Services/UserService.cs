@@ -48,8 +48,10 @@ namespace Users.Domain.Users.Services
         {
             User user = await _userRepository.GetByIdAsync(id);
 
-            if (user != null)
-                _userRepository.Remove(user);
+            if (user == null)
+                throw new ArgumentNullException(StringResource.ValidationMessageUserDontExists);
+            
+            _userRepository.Remove(user);
         }
 
         public async Task<UserDto> Login(UserDto userDto)
@@ -57,7 +59,7 @@ namespace Users.Domain.Users.Services
             string username = await _userRepository.Login(userDto);
 
             if (username == null)
-                return null;
+                throw new ArgumentNullException(StringResource.ValidationMessageUserDontExists);
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
@@ -79,14 +81,16 @@ namespace Users.Domain.Users.Services
         public async Task<string> Recover(RecoverUserPasswordDto recoverDto)
         {
             if (!await _userRepository.Exist(recoverDto.Email))
-                return StringResource.RecoverMessageUserDontExists;
+                throw new Exception(StringResource.ValidationMessageUserDontExists);
 
             User user = await _userRepository.GetByEmailAsync(recoverDto.Email);
 
-            if (user == null)
-                return StringResource.RecoverMessageUserDontExists;
+            user.UpdatePassword(recoverDto.Password);
 
-            user.UpdatePassword(recoverDto.Password);        
+            if (!user.Validate())
+                throw new ArgumentException(StringResource.ValidationMessageInvalidUser);
+
+            _userRepository.Update(user);
 
             return StringResource.RecoverMessageSuccess;
         }
@@ -95,12 +99,15 @@ namespace Users.Domain.Users.Services
         {
             User user = await _userRepository.GetByIdAsync(userDto.Id);
 
+            if (user == null)
+                throw new Exception(StringResource.ValidationMessageUserAlreadyExist);
+
             user.UpdateEmail(userDto.Email);
             user.UpdatePassword(userDto.Password);
             user.UpdateName(userDto.Name);
 
             if (!user.Validate())
-                return null;
+                throw new ArgumentException(StringResource.ValidationMessageInvalidUser);
 
             _userRepository.Update(user);
 
@@ -109,13 +116,13 @@ namespace Users.Domain.Users.Services
 
         private async Task<UserDto> Create(UserDto userDto)
         {
-            if (await _userRepository.Exist(userDto.Email))
-                return null;
+            if (await _userRepository.Exist(userDto.Email))          
+                throw new Exception(StringResource.ValidationMessageUserAlreadyExist);
 
             User user = new User(userDto.Email, userDto.Password, userDto.Name);
 
             if (!user.Validate())
-                return null;
+                throw new ArgumentException(StringResource.ValidationMessageInvalidUser);
 
             await _userRepository.AddAsync(user);
 

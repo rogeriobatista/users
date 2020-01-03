@@ -18,6 +18,7 @@ using Microsoft.IdentityModel.Tokens;
 using Users.Domain.Users.Interfaces;
 using Users.Domain.Users.Services;
 using Users.Generics.Helpers;
+using Users.Generics.Interfaces;
 using Users.Infra.Data.Context;
 using Users.Infra.Data.Repository;
 
@@ -66,6 +67,7 @@ namespace Users.Api
 
             services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
             services.AddScoped(typeof(IUserService), typeof(UserService));
+            services.AddScoped(typeof(ITokenHelper), typeof(TokenHelper));
 
         }
 

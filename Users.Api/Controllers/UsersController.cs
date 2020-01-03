@@ -1,9 +1,10 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Users.Domain.Users.Dtos;
 using Users.Domain.Users.Interfaces;
-using Users.Infra.Data.Context;
+using Users.Generics.Interfaces;
 
 namespace Users.Api.Controllers
 {
@@ -12,12 +13,10 @@ namespace Users.Api.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly UsersDbContext _context;
         private readonly IUserService _userService;
 
-        public UsersController(UsersDbContext context, IUserService userService)
+        public UsersController(IUserService userService)
         {
-            _context = context;
             _userService = userService;
         }
 
@@ -28,9 +27,9 @@ namespace Users.Api.Controllers
             {
                 return Ok(await _userService.Get());
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                return Ok(ex);
+                throw ex;
             }
         }
 
@@ -41,9 +40,9 @@ namespace Users.Api.Controllers
             {
                 return Ok(await _userService.Get(id));
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                return Ok(ex);
+                throw ex;
             }
         }
 
@@ -52,16 +51,11 @@ namespace Users.Api.Controllers
         {
             try
             {
-                UserDto result = await _userService.Save(userDto);
-
-                if (_context.ChangeTracker.HasChanges())
-                    await _context.SaveChangesAsync();
-
-                return Ok(result);
+                return Ok(await _userService.Save(userDto));
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                return Ok(ex);
+                throw ex;
             }            
         }
 
@@ -69,7 +63,6 @@ namespace Users.Api.Controllers
         public async Task Delete(long id)
         {
             await _userService.Delete(id);
-            await _context.SaveChangesAsync();
         }
 
         [AllowAnonymous]
@@ -78,16 +71,11 @@ namespace Users.Api.Controllers
         {
             try
             {
-                UserDto result = await _userService.Save(userDto);
-
-                if (_context.ChangeTracker.HasChanges())
-                    await _context.SaveChangesAsync();
-
-                return Ok(result);
+                return Ok(await _userService.Save(userDto));
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                return Ok(ex);
+                throw ex;
             }
         }
 
@@ -99,28 +87,26 @@ namespace Users.Api.Controllers
             {
                 return Ok(await _userService.Login(userDto));
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                return Ok(ex);
+                throw ex;
             }            
         }
 
         [AllowAnonymous]
-        [HttpPost("recover")]
-        public async Task<ActionResult> Recover([FromBody] RecoverUserPasswordDto recoverDto)
+        [HttpPost("recover/{token}")]
+        public async Task<ActionResult> Recover([FromServices] ITokenHelper tokenHelper, [FromBody] RecoverUserPasswordDto recoverDto, string token)
         {
             try
             {
-                string result = await _userService.Recover(recoverDto);
+                if (string.IsNullOrEmpty(token) || !tokenHelper.Validate(token))
+                    return Unauthorized();
 
-                if (_context.ChangeTracker.HasChanges())
-                    await _context.SaveChangesAsync();
-
-                return Ok(result);
+                return Ok(await _userService.Recover(recoverDto));
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                return Ok(ex);
+                throw ex;
             }
         }
     }

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Users.Generics.Configuration
+namespace Users.Generics.Configurations
 {
     public abstract class EntityTypeConfiguration<TEntity> where TEntity : class
     {
